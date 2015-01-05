@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>jQuery Jcrop 图像裁剪插件 » 在线演示 - 前端开发仓库</title>
+<link rel="stylesheet" href="./src/demo.css">
+<link rel="stylesheet" href="./src/layout.css">
+<link rel="stylesheet" href="./src/jquery.Jcrop.css">
+</head>
+<body>
+<div class="wrap">
+	<div class="side">
+		<div class="logo">
+			<a href="http://code.ciaoca.com/" target="_blank">前端开发仓库</a>
+			<em>在线演示</em>
+		</div>
+		<dl class="about">
+			<dt>关于</dt>
+			<dd><a target="_blank" href="http://deepliquid.com/content/Jcrop.html">作者</a></dd>
+			<dd><a target="_blank" href="http://deepliquid.com/content/Jcrop_Manual.html">Manual</a></dd>
+			<dd><a target="_blank" href="https://github.com/tapmodo/Jcrop/">Github</a></dd>
+			<dd class="br"><a target="_blank" href="http://code.ciaoca.com/jquery/jcrop/">中文文档</a></dd>
+		</dl>
+		<div id="nav" class="nav">
+			<dl>
+				<dt>示例</dt>
+				<dd class="n"><a href="http://code.ciaoca.com/jquery/jcrop/demo/index.html" title="基础示例">Hello World</a></dd>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/handler.html" title="事件处理">Basic Handler</a></dd>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/preview.html" title="按高宽比例预览裁剪效果">Aspect Ratio with Preview Pane</a></dd>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/animation.html" title="动画/过度效果">Animation / Transitions</a></dd>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/api.html" title="API 接口">API Interface</a></dd>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/styling.html" title="CSS 样式">Styling Example</a></dd>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/non-image.html" title="非图片裁剪">Non-Image Elements</a></dd>
+			</dl>
+			<dl>
+				<dt>配合后端语言</dt>
+				<dd><a href="http://code.ciaoca.com/jquery/jcrop/demo/crop.php" title="PHP 裁剪示例">PHP Cropping Demo</a></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="main">
+		<div class="inwrap">
+			<h1>jQuery Jcrop 图像裁剪插件</h1>
+			<h2>Hello World 基础示例</h2>
+			
+			<div class="detail">
+				<p>这个示例演示了 Jcrop 的默认效果</p>
+				<p>由于没有其他的事件，它只是简单的在图像上画裁剪框，并不能处理什么。</p>
+			</div>
+			
+			<div class="example">
+				<img src="./src/sago.jpg" id="target" alt="[Jcrop Example]" style="display: none; visibility: hidden; width: 602px; height: 400px;"><div class="jcrop-holder" style="width: 602px; height: 400px; position: relative; background-color: black;"><div style="position: absolute; z-index: 600; width: 0px; height: 0px; top: 97px; left: 232px; display: none;"><div style="width: 100%; height: 100%; z-index: 310; position: absolute; overflow: hidden;"><img src="./src/sago.jpg" style="border: none; visibility: visible; margin: 0px; padding: 0px; position: absolute; top: -97px; left: -232px; width: 602px; height: 400px;"><div class="jcrop-hline" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-hline bottom" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-vline right" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-vline" style="position: absolute; opacity: 0.4;"></div><div class="jcrop-tracker" style="cursor: move; position: absolute; z-index: 360;"></div></div><div style="width: 100%; height: 100%; z-index: 320; display: none;"><div class="ord-n jcrop-dragbar" style="cursor: n-resize; position: absolute; z-index: 370;"></div><div class="ord-s jcrop-dragbar" style="cursor: s-resize; position: absolute; z-index: 371;"></div><div class="ord-e jcrop-dragbar" style="cursor: e-resize; position: absolute; z-index: 372;"></div><div class="ord-w jcrop-dragbar" style="cursor: w-resize; position: absolute; z-index: 373;"></div><div class="ord-n jcrop-handle" style="cursor: n-resize; position: absolute; z-index: 374; opacity: 0.5;"></div><div class="ord-s jcrop-handle" style="cursor: s-resize; position: absolute; z-index: 375; opacity: 0.5;"></div><div class="ord-e jcrop-handle" style="cursor: e-resize; position: absolute; z-index: 376; opacity: 0.5;"></div><div class="ord-w jcrop-handle" style="cursor: w-resize; position: absolute; z-index: 377; opacity: 0.5;"></div><div class="ord-nw jcrop-handle" style="cursor: nw-resize; position: absolute; z-index: 378; opacity: 0.5;"></div><div class="ord-ne jcrop-handle" style="cursor: ne-resize; position: absolute; z-index: 379; opacity: 0.5;"></div><div class="ord-se jcrop-handle" style="cursor: se-resize; position: absolute; z-index: 380; opacity: 0.5;"></div><div class="ord-sw jcrop-handle" style="cursor: sw-resize; position: absolute; z-index: 381; opacity: 0.5;"></div></div></div><div class="jcrop-tracker" style="width: 606px; height: 404px; position: absolute; top: -2px; left: -2px; z-index: 290; cursor: crosshair;"></div><input type="radio" class="jcrop-keymgr" style="position: fixed; left: -120px; width: 12px; display: none;"><img src="./src/sago.jpg" alt="[Jcrop Example]" style="display: block; visibility: visible; width: 602px; height: 400px; border: none; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; opacity: 1;"></div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<script src="./src/jquery-1.5.2.min.js"></script>
+<script src="./src/jquery.Jcrop.min.js"></script>
+<script>
+jQuery(function($){
+	// How easy is this??
+	$('#target').Jcrop();
+});
+</script>
+
+</body></html>

@@ -1,0 +1,20 @@
+fieldset{margin:0 0 20px 0;padding:0;border:0;}
+fieldset legend{display:block;width:100%;margin-bottom:10px;padding-bottom:5px;border:0;border-bottom:1px solid #e5e5e5;font:bold 14px/20px '\5fae\8f6f\96c5\9ed1';}
+
+.inleft{float:left;}
+.inright{float:left;margin-left:20px;}
+.inright .cxbtn_group{display:block;}
+.inright .cxbtn_group + .cxbtn_group{margin-top:10px;margin-left:0;}
+
+
+/* Apply these styles only when #preview-pane has
+   been placed within the Jcrop widget */
+.jcrop-holder #preview-pane{display:block;position:absolute;z-index:2000;top:0;right:-280px;padding:6px;border:1px rgba(0,0,0,.4) solid;border-radius:6px;background-color:white;box-shadow:1px 1px 5px 2px rgba(0, 0, 0, 0.2);}
+
+/* The Javascript code will set the aspect ratio of the crop
+area based on the size of the thumbnail preview,
+specified here */
+#preview-pane .preview-container{width:250px;height:170px;overflow:hidden;}
+
+
+#bgc_buttons .cxbtn{text-shadow:none;}
